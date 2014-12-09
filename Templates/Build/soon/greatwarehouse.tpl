@@ -1,18 +1,18 @@
-<h2>Great Warehouse</h2>
+<h2>大倉庫</h2>
         <table class="new_building" cellpadding="1" cellspacing="1">
                 <tbody><tr>
-                        <td class="desc">Wood, clay and iron are stored in the warehouse. The great warehouse offers you more space and keeps your goods drier and safer than the normal one.</td>
+                        <td class="desc">大倉庫比一般倉庫能夠存方更多的東西（鐵，磚塊跟木頭）</td>
                         <td rowspan="3" class="bimg">
                                 <a href="#" onClick="return Popup(38,4);">
-                                <img class="building g38" src="img/x.gif" alt="Great Warehouse" title="Great Warehouse" /></a>
+                                <img class="building g38" src="img/x.gif" alt="大倉庫" title="大倉庫" /></a>
                         </td>
                 </tr>
                 <tr>
-                <td class="requ">Prerequisites</td>
+                <td class="requ">先決條件</td>
                 </tr>
                 <tr>
                         <td>
-                                <a href="#" onClick="return Popup(15,4);">Main Building</a> <span title="+10">Level 10</span>, <strike>Capital</strike>
+                                <a href="#" onClick="return Popup(15,4);">村莊大樓</a> <span title="+10">等級 10</span>, <strike>首都</strike>
                         </td>
                 </tr></tbody>
         </table>

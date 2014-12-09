@@ -1,18 +1,18 @@
-<h2>Great Workshop</h2>
+<h2>大馬殿</h2>
         <table class="new_building" cellpadding="1" cellspacing="1">
                 <tbody><tr>
-                        <td class="desc">In the great workshop siege engines like catapults and rams can be built, albeit at triple the cost of a standard unit. The higher its level the faster units are produced.</td>
+                        <td class="desc"> 在大馬廄裡可以訓練額外的騎兵.但是資源的消耗是原來的3倍.(只可以在主村之外的村莊建造). </td>
                         <td rowspan="3" class="bimg">
                                 <a href="#" onClick="return Popup(42,4);">
-                                <img class="building g42" src="img/x.gif" alt="Great Workshop" title="Great Workshop" /></a>
+                                <img class="building g42" src="img/x.gif" alt="大工廠" title="大工廠" /></a>
                         </td>
                 </tr>
                 <tr>
-                <td class="requ">Prerequisites</td>
+                <td class="requ">先決條件</td>
                 </tr>
                 <tr>
                         <td>
-                                <a href="#" onClick="return Popup(21,4);">Workshop</a> <span title="+20">Level 20</span>, <strike>Capital</strike>
+                                <a href="#" onClick="return Popup(21,4);">馬廄</a> <span title="+20">等級 20</span>, <strike>首都</strike>
                         </td>
                 </tr></tbody>
         </table>

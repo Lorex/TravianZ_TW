@@ -16,11 +16,11 @@
 					<td class="details">
 						<table cellpadding="0" cellspacing="0">
 							<tr>
-								<th>Rank</th>
+								<th>排名</th>
 								<td><?php $ranking->procRankArray();echo $ranking->getUserRank($user['id']); ?></td>
 							</tr>
 							<tr>
-								<th>Tribe</th>
+								<th>種族</th>
 								<td>
 									<?php
 										if($user['tribe'] == 1)
@@ -47,7 +47,7 @@
 								</td>
 							</tr>
 							<tr>
-								<th>Alliance</th>
+								<th>聯盟</th>
 								<td>
 									<?php
 										if($user['alliance'] == 0)
@@ -62,15 +62,15 @@
 								</td>
 							</tr>
 							<tr>
-								<th>Villages</th>
+								<th>村莊</th>
 								<td><?php echo count($varray);?></td>
 							</tr>
 							<tr>
-								<th>Population</th>
+								<th>人口</th>
 								<td><?php echo $totalpop;?> <a href="?action=recountPopUsr&uid=<?php echo $user['id'];?>"><?php echo $refreshicon; ?></a></td>
 							</tr>
 							<tr>
-								<th>Age</td>
+								<th>年齡</td>
 								<td>
 									<?php
 										if(isset($user['birthday']) && $user['birthday'] != 0)
@@ -80,30 +80,30 @@
 										}
 										else
 										{
-											echo "<font color=\"red\">Not Available</font>";
+											echo "<font color=\"red\">無法顯示</font>";
 										}
 									?>
 								</td>
 							</tr>
 							<tr>
-								<th>Gender</td>
+								<th>性別</td>
 								<td>
 									<?php
 										if(isset($user['gender']) && $user['gender'] != 0)
 										{
-											$gender = ($user['gender']== 1)? "Male" : "Female";
+											$gender = ($user['gender']== 1)? "男性" : "女性";
 											echo $gender;
 										}
 										else
 										{
-											echo "<font color=\"red\">Not Available</font>";
+											echo "<font color=\"red\">無法顯示</font>";
 										}
 									?>
 								</td>
 							</tr>
 
 							<tr>
-								<th>Username</th>
+								<th>使用者名稱</th>
 								<td>
 									<form action="../GameEngine/Admin/Mods/editUsername.php" method="POST">
 										<input type="hidden" name="admid" id="admid" value="<?php echo $_SESSION['id']; ?>">
@@ -113,23 +113,23 @@
 							</tr>
 
 							<tr>
-								<th>Location</th>
+								<th>位置</th>
 								<td>
 									<input type="text" style="width: 80%;" disabled="disabled" class="fm" name="location" value="<?php echo $user['location']; ?>">  <a href="admin.php?p=editUser&uid=<?php echo $id; ?>"><img src="../img/admin/edit.gif" title="Edit Location"></a>
 								</td>
 							</tr>
 
 							<tr>
-								<th>Password</th>
+								<th>密碼</th>
 								<td>
-									Change <a href="admin.php?p=editPassword&uid=<?php echo $id; ?>"><img src="../img/admin/edit.gif" title="Change Password"></a>
+									變更密碼 <a href="admin.php?p=editPassword&uid=<?php echo $id; ?>"><img src="../img/admin/edit.gif" title="Change Password"></a>
 								</td>
 							</tr>
 
 							<tr>
 								<?php include("playerplusbonus.tpl"); ?>
 							<tr>
-								<th>Email</th>
+								<th>信箱</th>
 								<td>
 									<input disabled="disabled" style="width: 80%;" class="fm" name="email" value="<?php echo $user['email']; ?>"> <a href="admin.php?p=editUser&uid=<?php echo $id; ?>"><img src="../img/admin/edit.gif" title="Edit Email"></a>
 								</td>
@@ -145,32 +145,32 @@
 								</td>
 							</tr> */ ?>
 							<tr>
-								<th>Quest</td>
+								<th>探索</td>
 								<td>
 									<?php
 										## not sure if this is correct
 										$quest = $user['quest'];
-										if($quest == 1) { $questname = "Woodcutter"; }
-										elseif($quest ==2) {$questname = "Crop"; }
-										elseif($quest ==3) {$questname = "Your Villages Name"; }
-										elseif($quest ==4) {$questname = "Other Players"; }
+										if($quest == 1) { $questname = "樵夫"; }
+										elseif($quest ==2) {$questname = "作物"; }
+										elseif($quest ==3) {$questname = "你的村莊名"; }
+										elseif($quest ==4) {$questname = "其他玩家"; }
 										elseif($quest ==5) {$questname = "Two Building Order"; }
-										elseif($quest ==6) {$questname = "Messages"; }
-										elseif($quest ==7) {$questname = "Huge Army!"; }
+										elseif($quest ==6) {$questname = "訊息"; }
+										elseif($quest ==7) {$questname = "龐大的軍隊!"; }
 										elseif($quest ==8) {$questname = "Everything to 1!"; }
 										elseif($quest ==9) {$questname = "Dove of Peace"; }
 										elseif($quest ==10) {$questname = "Cranny"; }
 										elseif($quest ==11) {$questname = "To Two!"; }
-										elseif($quest ==12) {$questname = "Instruction"; }
-										elseif($quest ==13) {$questname = "Main Building"; }
-										elseif($quest ==14) {$questname = "Advanced!" ;}
+										elseif($quest ==12) {$questname = "指令"; }
+										elseif($quest ==13) {$questname = "村莊大樓"; }
+										elseif($quest ==14) {$questname = "進階!" ;}
 										elseif($quest ==15) {$questname = "Weapons or Dough"; }
-										elseif($quest ==16) {$questname = "Military: Rally Point"; }
-										elseif($quest ==17) {$questname = "Military: Barracks"; }
-										elseif($quest ==18) {$questname = "Military: Train 2 Troops"; }
-										elseif($quest ==19) {$questname = "Economy: Granary"; }
-										elseif($quest ==20) {$questname = "Economy: Warehouse"; }
-										elseif($quest ==21) {$questname = "Economy: Marketplace"; }
+										elseif($quest ==16) {$questname = "軍事: 集結點"; }
+										elseif($quest ==17) {$questname = "軍事: 軍營"; }
+										elseif($quest ==18) {$questname = "軍事: Train 2 Troops"; }
+										elseif($quest ==19) {$questname = "經濟: 糧倉"; }
+										elseif($quest ==20) {$questname = "經濟: 倉庫"; }
+										elseif($quest ==21) {$questname = "經濟: 市場"; }
 										elseif($quest ==22) {$questname = "Everything to 2!"; }
 										elseif($quest ==28) {$questname = "Alliance : Join to one"; }
 										elseif($quest ==29) {$questname = "Main Building to 5"; }
@@ -179,10 +179,10 @@
 										elseif($quest ==32) {$questname = "Everything to 5!"; }
 										elseif($quest ==33) {$questname = "Palace or Residence"; }
 										elseif($quest ==34) {$questname = "3 settlers"; }
-										elseif($quest ==35) {$questname = "New Village"; }
+										elseif($quest ==35) {$questname = "新村莊"; }
 										elseif($quest ==36) {$questname = "Build a Wall/Palisade"; }
-										elseif($quest >=37) {$questname = "Finish"; }
-										else { $questname = "Unknown"; }
+										elseif($quest >=37) {$questname = "完成"; }
+										else { $questname = "未知"; }
 										$quesst = $quest;
 										if($quest > 18){
 										$quesst = $quest - 3;

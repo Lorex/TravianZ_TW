@@ -43,58 +43,58 @@ class Automation {
 		public function procResType($ref,$mode=0,$isoasis=0) {
 		global $session;
 		switch($ref) {
-			case 1: $build = "Woodcutter"; break;
-			case 2: $build = "Clay Pit"; break;
-			case 3: $build = "Iron Mine"; break;
-			case 4: $build = "Cropland"; break;
-			case 5: $build = "Sawmill"; break;
-			case 6: $build = "Brickyard"; break;
-			case 7: $build = "Iron Foundry"; break;
-			case 8: $build = "Grain Mill"; break;
-			case 9: $build = "Bakery"; break;
-			case 10: $build = "Warehouse"; break;
-			case 11: $build = "Granary"; break;
-			case 12: $build = "Blacksmith"; break;
-			case 13: $build = "Armoury"; break;
-			case 14: $build = "Tournament Square"; break;
-			case 15: $build = "Main Building"; break;
-			case 16: $build = "Rally Point"; break;
-			case 17: $build = "Marketplace"; break;
-			case 18: $build = "Embassy"; break;
-			case 19: $build = "Barracks"; break;
-			case 20: $build = "Stable"; break;
-			case 21: $build = "Workshop"; break;
-			case 22: $build = "Academy"; break;
-			case 23: $build = "Cranny"; break;
-			case 24: $build = "Town Hall"; break;
-			case 25: $build = "Residence"; break;
-			case 26: $build = "Palace"; break;
-			case 27: $build = "Treasury"; break;
-			case 28: $build = "Trade Office"; break;
-			case 29: $build = "Great Barracks"; break;
-			case 30: $build = "Great Stable"; break;
-			case 31: $build = "City Wall"; break;
-			case 32: $build = "Earth Wall"; break;
-			case 33: $build = "Palisade"; break;
-			case 34: $build = "Stonemason's Lodge"; break;
-			case 35: $build = "Brewery"; break;
-			case 36: $build = "Trapper"; break;
-			case 37: $build = "Hero's Mansion"; break;
-			case 38: $build = "Great Warehouse"; break;
-			case 39: $build = "Great Granary"; break;
-			case 40: $build = "Wonder of the World"; break;
-			case 41: $build = "Horse Drinking Trough"; break;
-			case 42: $build = "Great Workshop"; break;
+			case 1: $build = "伐木廠"; break;
+			case 2: $build = "泥坑"; break;
+			case 3: $build = "鐵礦場"; break;
+			case 4: $build = "農田"; break;
+			case 5: $build = "鋸木廠"; break;
+			case 6: $build = "磚瓦廠"; break;
+			case 7: $build = "鋼鐵鑄造廠"; break;
+			case 8: $build = "磨坊"; break;
+			case 9: $build = "麵包房"; break;
+			case 10: $build = "倉庫"; break;
+			case 11: $build = "糧倉"; break;
+			case 12: $build = "鐵匠"; break;
+			case 13: $build = "軍械庫"; break;
+			case 14: $build = "競技場"; break;
+			case 15: $build = "村莊大樓"; break;
+			case 16: $build = "集結點"; break;
+			case 17: $build = "市集"; break;
+			case 18: $build = "大使館"; break;
+			case 19: $build = "軍營"; break;
+			case 20: $build = "馬廄"; break;
+			case 21: $build = "工場"; break;
+			case 22: $build = "研究院"; break;
+			case 23: $build = "山洞"; break;
+			case 24: $build = "城鎮廳"; break;
+			case 25: $build = "行宮"; break;
+			case 26: $build = "皇宮"; break;
+			case 27: $build = "寶物庫"; break;
+			case 28: $build = "市場"; break;
+			case 29: $build = "大兵營"; break;
+			case 30: $build = "大馬廄"; break;
+			case 31: $build = "城牆"; break;
+			case 32: $build = "土牆"; break;
+			case 33: $build = "木牆"; break;
+			case 34: $build = "石匠"; break;
+			case 35: $build = "釀造廠"; break;
+			case 36: $build = "陷阱"; break;
+			case 37: $build = "英雄宅"; break;
+			case 38: $build = "大倉庫"; break;
+			case 39: $build = "大穀倉"; break;
+			case 40: $build = "世界奇觀"; break;
+			case 41: $build = "馬飲水槽"; break;
+			case 42: $build = "大工廠"; break;
 			    //default: $build = "Nothing had"; break;
 			}
 		if ($build=="") {
         if ($mode) { //true to destroy village
-            $build="The village has been";
+            $build="這個村莊已經被";
         }else{ //capital or only 1 village left.. not destroy
-            $build="Village can't be";
+            $build="這個村莊不能被";
         }
 		}
-		if ($isoasis!=0) $build = "Oasis had";
+		if ($isoasis!=0) $build = "擁有綠洲";
 		return addslashes($build);
 		}
 
