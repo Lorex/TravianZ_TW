@@ -11,7 +11,7 @@ Later in the game the buildings in the village become important too. In order to
 
 Some buildings can only be built if you fulfil the prerequisites which are other buildings.</p>
 
-<h2>Main Building</h2>
+<h2>村莊大樓</h2>
 
 
 
