@@ -8,11 +8,13 @@
 			</td>
 		</tr>
 		<tr>
-		<td class="requ">建造需求</td>
+
+		<td class="requ">先決條件</td>
 		</tr>
 		<tr>
 			<td>
-				<a href="#" onClick="return Popup(19,4);">兵營</a> <span title="+3">等級 3</span>, <a href="#" onClick="return Popup(15,4);">村莊大樓</a> <span title="+2">等級 3</span>
+				<a href="#" onClick="return Popup(19,4);">軍營</a> <span title="+3">Level 3</span>, <a href="#" onClick="return Popup(15,4);">村莊大樓</a> <span title="+2">Level 3</span>
+
 			</td>
 		</tr></tbody>
 	</table>
