@@ -19,7 +19,7 @@ Some buildings can only be built if you fulfil the prerequisites which are other
 
 <p>
 
-<img src="img/un/h/gid15.gif" width=166 height=150 border=0 alt="Main Building" title="Main Building" align="left" />
+<img src="img/un/h/gid15.gif" width=166 height=150 border=0 alt="Main Building" title="村莊大樓" align="left" />
 
 The village's master builders live in the main building. The higher its level the faster your master builders complete the construction of new buildings.
 
