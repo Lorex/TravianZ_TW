@@ -8,7 +8,7 @@
 			</td>
 		</tr>
 		<tr>
-		<td class="requ">Prerequisites</td>
+		<td class="requ">先決條件</td>
 		</tr>
 		<tr>
 			<td>

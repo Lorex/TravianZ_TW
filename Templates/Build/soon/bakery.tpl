@@ -8,7 +8,7 @@
 			</td>
 		</tr>
 		<tr>
-		<td class="requ">建造需求</td>
+		<td class="requ">先決條件</td>
 		</tr>
 		<tr>
 			<td>
