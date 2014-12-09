@@ -1,19 +1,19 @@
 
-<h2>Great Granary</h2>
+<h2>大糧倉</h2>
         <table class="new_building" cellpadding="1" cellspacing="1">
                 <tbody><tr>
-                        <td class="desc">Crop produced by your farms is stored in the granary. The great granary offers you more space and keeps your crops drier and safer than the normal one.</td>
+                        <td class="desc">糧倉用來存放你所生產的糧食.大糧倉可以存放比一般糧倉更多糧食</td>
                         <td rowspan="3" class="bimg">
                                 <a href="#" onClick="return Popup(39,4);">
-                                <img class="building g39" src="img/x.gif" alt="Great Granary" title="Great Granary" /></a>
+                                <img class="building g39" src="img/x.gif" alt="大糧倉" title="大糧倉" /></a>
                         </td>
                 </tr>
                 <tr>
-                <td class="requ">Prerequisites</td>
+                <td class="requ">先決條件</td>
                 </tr>
                 <tr>
                         <td>
-                                <a href="#" onClick="return Popup(15,4);">Main Building</a> <span title="+10">Level 10</span>, <strike>Capital</strike>
+                                <a href="#" onClick="return Popup(15,4);">村莊大樓</a> <span title="+10">等級 10</span>, <strike>首都</strike>
                         </td>
                 </tr></tbody>
         </table>
