@@ -89,12 +89,12 @@ class Automation {
 			}
 		if ($build=="") {
         if ($mode) { //true to destroy village
-            $build="The village has been";
+            $build="這個村莊已經被";
         }else{ //capital or only 1 village left.. not destroy
-            $build="Village can't be";
+            $build="這個村莊不能被";
         }
 		}
-		if ($isoasis!=0) $build = "Oasis had";
+		if ($isoasis!=0) $build = "擁有綠洲";
 		return addslashes($build);
 		}
 

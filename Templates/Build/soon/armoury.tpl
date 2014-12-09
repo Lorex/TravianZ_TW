@@ -1,7 +1,7 @@
-    <h2>Armoury</h2>
+    <h2>軍械庫</h2>
 	<table class="new_building" cellpadding="1" cellspacing="1">
 		<tbody><tr>
-			<td class="desc">In the armoury&#39;s melting furnaces your warriors&#39; armour is enhanced. By increasing its level you can order the fabrication of even better armour.</td>
+			<td class="desc">軍械庫用來製造及改良你部隊的防具，藉以增加部隊的防禦力。當然，軍械庫級數愈高，能夠製造出的防具防禦力也會愈強。</td>
 			<td rowspan="3" class="bimg">
 				<a href="#" onClick="return Popup(13,4);">
 				<img class="building g13" src="img/x.gif" alt="Armoury" title="Armoury" /></a>
@@ -12,7 +12,7 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="#" onClick="return Popup(15,4);">Main Building</a> <span title="+2">Level 3</span>, <a href="#" onClick="return Popup(22,4);">Academy</a> <span title="+1">Level 1</span>
+				<a href="#" onClick="return Popup(15,4);">村莊大樓</a> <span title="+2">等級 3</span>, <a href="#" onClick="return Popup(22,4);">研究院</a> <span title="+1">等級 1</span>
 			</td>
 		</tr></tbody>
 	</table>
